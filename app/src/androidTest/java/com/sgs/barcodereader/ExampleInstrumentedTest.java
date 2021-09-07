@@ -1,4 +1,4 @@
-package com.notbytes.barcodereader;
+package com.sgs.barcodereader;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

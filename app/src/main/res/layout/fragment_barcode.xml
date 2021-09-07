@@ -6,13 +6,13 @@
 
     <fragment
         android:id="@+id/barcode_fragment"
-        android:name="com.notbytes.barcode_reader.BarcodeReaderFragment"
+        android:name="com.sgs.scanreader.BarcodeReaderFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:auto_focus="true"
         app:use_flash="false" />
 
-    <com.notbytes.barcode_reader.ScannerOverlay
+    <com.sgs.scanreader.ScannerOverlay
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#44000000"

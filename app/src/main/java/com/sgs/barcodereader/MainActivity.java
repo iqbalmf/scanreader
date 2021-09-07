@@ -1,4 +1,4 @@
-package com.notbytes.barcodereader;
+package com.sgs.barcodereader;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -13,8 +13,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.vision.barcode.Barcode;
-import com.notbytes.barcode_reader.BarcodeReaderActivity;
-import com.notbytes.barcode_reader.BarcodeReaderFragment;
+import com.sgs.scanreader.BarcodeReaderActivity;
+import com.sgs.scanreader.BarcodeReaderFragment;
 
 import java.util.List;
 
@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private static final int BARCODE_READER_ACTIVITY_REQUEST = 1208;
     private TextView mTvResult;
     private TextView mTvResultHeader;
+    private BarcodeReaderFragment readerFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void addBarcodeReaderFragment() {
-        BarcodeReaderFragment readerFragment = BarcodeReaderFragment.newInstance(true, false, View.VISIBLE);
+        readerFragment = BarcodeReaderFragment.newInstance(true, false, View.VISIBLE);
         readerFragment.setListener(this);
         FragmentManager supportFragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = supportFragmentManager.beginTransaction();
@@ -63,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     private void launchBarCodeActivity() {
-        Intent launchIntent = BarcodeReaderActivity.getLaunchIntent(this, true, false);
+        Intent launchIntent = BarcodeReaderActivity.getLaunchIntent(this, true, true);
         startActivityForResult(launchIntent, BARCODE_READER_ACTIVITY_REQUEST);
     }
 
@@ -89,6 +90,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onScanned(Barcode barcode) {
         Toast.makeText(this, barcode.rawValue, Toast.LENGTH_SHORT).show();
+        readerFragment.playBeep();
         mTvResultHeader.setText("Barcode value from fragment");
         mTvResult.setText(barcode.rawValue);
     }

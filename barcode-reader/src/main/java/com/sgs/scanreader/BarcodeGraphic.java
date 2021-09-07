@@ -1,4 +1,4 @@
-package com.notbytes.barcode_reader;
+package com.sgs.scanreader;
 
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -6,7 +6,7 @@ import android.graphics.Paint;
 import android.graphics.RectF;
 
 import com.google.android.gms.vision.barcode.Barcode;
-import com.notbytes.barcode_reader.camera.GraphicOverlay;
+import com.sgs.scanreader.camera.GraphicOverlay;
 
 /**
  * Graphic instance for rendering barcode position, size, and ID within an associated graphic

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.notbytes.barcode_reader">
+    package="com.sgs.scanreader">
 
     <uses-permission android:name="android.permission.CAMERA" />
 
     <uses-feature android:name="android.hardware.camera" />
 
     <application>
-        <activity android:name=".BarcodeReaderActivity"></activity>
+        <activity android:name="com.sgs.scanreader.BarcodeReaderActivity"></activity>
     </application>
 
 </manifest>

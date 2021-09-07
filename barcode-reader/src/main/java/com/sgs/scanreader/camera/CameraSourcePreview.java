@@ -1,5 +1,5 @@
 
-package com.notbytes.barcode_reader.camera;
+package com.sgs.scanreader.camera;
 
 import android.Manifest;
 import android.content.Context;

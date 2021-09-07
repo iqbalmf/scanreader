@@ -1,4 +1,4 @@
-package com.notbytes.barcode_reader;
+package com.sgs.scanreader;
 
 import android.util.Log;
 import android.util.SparseArray;
@@ -6,7 +6,7 @@ import android.util.SparseArray;
 import com.google.android.gms.vision.Detector;
 import com.google.android.gms.vision.Tracker;
 import com.google.android.gms.vision.barcode.Barcode;
-import com.notbytes.barcode_reader.camera.GraphicOverlay;
+import com.sgs.scanreader.camera.GraphicOverlay;
 
 import java.util.ArrayList;
 import java.util.List;

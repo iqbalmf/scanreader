@@ -1,4 +1,4 @@
-package com.notbytes.barcode_reader.camera;
+package com.sgs.scanreader.camera;
 
 import android.content.Context;
 import android.graphics.Canvas;

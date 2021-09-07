@@ -1,4 +1,4 @@
-package com.notbytes.barcode_reader;
+package com.sgs.scanreader;
 
 import org.junit.Test;
 

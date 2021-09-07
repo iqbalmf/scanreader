@@ -1,4 +1,4 @@
-package com.notbytes.barcode_reader;
+package com.sgs.scanreader;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -38,9 +38,9 @@ import com.google.android.gms.common.api.CommonStatusCodes;
 import com.google.android.gms.vision.MultiProcessor;
 import com.google.android.gms.vision.barcode.Barcode;
 import com.google.android.gms.vision.barcode.BarcodeDetector;
-import com.notbytes.barcode_reader.camera.CameraSource;
-import com.notbytes.barcode_reader.camera.CameraSourcePreview;
-import com.notbytes.barcode_reader.camera.GraphicOverlay;
+import com.sgs.scanreader.camera.CameraSource;
+import com.sgs.scanreader.camera.CameraSourcePreview;
+import com.sgs.scanreader.camera.GraphicOverlay;
 
 import java.io.IOException;
 import java.util.List;

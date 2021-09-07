@@ -1,4 +1,4 @@
-package com.notbytes.barcodereader;
+package com.sgs.barcodereader;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.google.android.gms.vision.barcode.Barcode;
-import com.notbytes.barcode_reader.BarcodeReaderFragment;
+import com.sgs.scanreader.BarcodeReaderFragment;
 
 import java.util.List;
 

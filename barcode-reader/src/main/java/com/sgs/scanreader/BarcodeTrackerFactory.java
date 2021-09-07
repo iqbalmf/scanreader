@@ -1,9 +1,9 @@
-package com.notbytes.barcode_reader;
+package com.sgs.scanreader;
 
 import com.google.android.gms.vision.MultiProcessor;
 import com.google.android.gms.vision.Tracker;
 import com.google.android.gms.vision.barcode.Barcode;
-import com.notbytes.barcode_reader.camera.GraphicOverlay;
+import com.sgs.scanreader.camera.GraphicOverlay;
 
 /**
  * Factory for creating a tracker and associated graphic to be associated with a new barcode.  The
